@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component,Inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { AddFoodpopUpComponent } from './add-foodpop-up/add-foodpop-up.component';
+// import { localStorageToken } from './localstorage.token';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'foodWebsite2';
+  // constructor(@Inject(localStorageToken) private localStorage:Storage){
+     
+  // }
+
+  constructor(){}
+  
 }
